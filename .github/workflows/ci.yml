@@ -27,8 +27,7 @@ jobs:
         run: opam exec -- dune runtest
         
       - name: Lint OCaml
-        run: opam exec -- ocamlformat --enable-outside-detected-project --check **/*.ml **/*.mli
-
+        run: find . -name "*.ml" -o -name "*.mli" | xargs opam exec -- ocamlformat --enable-outside-detected-project --check
 
       - name: Run Python tests
         run: python3 test/tests.py
