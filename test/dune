@@ -1,4 +1,4 @@
 (test
  (name tests)
  (modules tests)
- (libraries alcotest problem1 problem2 helpers))
+ (libraries alcotest problem1 problem2))
