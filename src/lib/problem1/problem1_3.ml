@@ -3,5 +3,5 @@ let euler4_3 () =
   let prods =
     List.concat (List.map (fun a -> List.map (fun b -> a * b) nums) nums)
   in
-  let pals = List.filter Helpers.is_pal prods in
+  let pals = List.filter Helpers.Helper1.is_pal prods in
   List.fold_left max 0 pals

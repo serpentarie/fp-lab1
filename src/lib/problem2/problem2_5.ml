@@ -2,7 +2,7 @@ let euler26_5 () =
   let best_d = ref 0 in
   let best_len = ref 0 in
   for d = 2 to 999 do
-    let len = Helpers.cycle_length d in
+    let len = Helpers.Helper2.cycle_length d in
     if len > !best_len then (
       best_len := len;
       best_d := d)

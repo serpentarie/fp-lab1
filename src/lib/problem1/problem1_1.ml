@@ -4,7 +4,9 @@ let euler4_1 () =
     else if j < 100 then loop (i - 1) (i - 1) best
     else
       let prod = i * j in
-      let best = if prod > best && Helpers.is_pal prod then prod else best in
+      let best =
+        if prod > best && Helpers.Helper1.is_pal prod then prod else best
+      in
       loop i (j - 1) best
   in
   loop 999 999 0

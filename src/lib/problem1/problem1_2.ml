@@ -6,7 +6,7 @@ let euler4_2 () =
         if j < 100 then 0
         else
           let p = i * j in
-          let cand = if Helpers.is_pal p then p else 0 in
+          let cand = if Helpers.Helper1.is_pal p then p else 0 in
           max cand (loop_j (j - 1))
       in
       max (loop_j i) (loop_i (i - 1))

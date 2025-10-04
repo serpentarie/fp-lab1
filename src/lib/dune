@@ -1,3 +1,3 @@
 (library
  (name helpers)
- (modules helpers))
+ (modules helper1 helper2))
