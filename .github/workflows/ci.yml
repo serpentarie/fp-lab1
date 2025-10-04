@@ -25,6 +25,10 @@ jobs:
 
       - name: Run OCaml tests
         run: opam exec -- dune runtest
+        
+      - name: Lint OCaml
+        run: opam exec -- ocamlformat --enable-outside-detected-project --check **/*.ml **/*.mli
+
 
       - name: Run Python tests
         run: python3 test/tests.py
