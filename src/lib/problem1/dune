@@ -1,0 +1,4 @@
+(library
+ (name problem1)
+ (modules problem1_1 problem1_2 problem1_3 problem1_4 problem1_5 problem1_6)
+ (libraries helpers))
