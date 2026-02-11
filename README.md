@@ -1,7 +1,3 @@
-## Мазайкина Мария Дмитриевна | P3309
-
-### Лабораторная работа 1. Вариант: 4, 26
-
 ### Problem 4. Largest Palindrome Product
 [https://projecteuler.net/problem=4](https://projecteuler.net/problem=4)
 
